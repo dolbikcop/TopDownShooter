@@ -7,10 +7,11 @@ public class HealthBar : MonoBehaviour
     private Transform bar;
     private PlayerHealth player;
     private int startHealth;
-    void Awake()
+    void Start()
     {
         bar = transform.Find("Bar");
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        var player1 = DataManager.player;
+        player = player1.GetComponent<PlayerHealth>();
         startHealth = player.health;
     }
 

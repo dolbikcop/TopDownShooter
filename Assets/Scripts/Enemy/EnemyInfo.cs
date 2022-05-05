@@ -7,13 +7,13 @@ public class EnemyInfo : MonoBehaviour
 {
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Time.timeScale == 0f)
-            Time.timeScale = 1f;
+        //if (Input.GetKeyDown(KeyCode.E) && Time.timeScale == 0f)
+        //    Time.timeScale = 1f;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.GetComponent<Enemy>())
-            Time.timeScale = 0f;
+        //if (col.gameObject.GetComponent<Enemy>())
+        //    Time.timeScale = 0f;
     }
 }

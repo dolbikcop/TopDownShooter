@@ -6,7 +6,7 @@ public class SceneData : MonoBehaviour
 {
     public Transform player;
 
-    private void Start()
+    private void Awake()
     {
         DataManager.player = player;
     }

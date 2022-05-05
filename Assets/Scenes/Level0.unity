@@ -166,7 +166,6 @@ MonoBehaviour:
   - {fileID: 552194461}
   - {fileID: 760875359}
   - {fileID: 591901258}
-  startTimeBtwSpawns: 3
 --- !u!4 &144665922
 Transform:
   m_ObjectHideFlags: 0
@@ -184,7 +183,7 @@ Transform:
   - {fileID: 760875359}
   - {fileID: 591901258}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178447702
 GameObject:
@@ -490,7 +489,7 @@ Transform:
   - {fileID: 972080239}
   - {fileID: 1952306797}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281266113
 GameObject:
@@ -1776,7 +1775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979190219
 GameObject:
@@ -2007,6 +2006,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 915312621, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1027543600433961578, guid: 11774b137a479294da0b764fb374fef9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2015,9 +2018,25 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 281266114}
+    - target: {fileID: 1027543600433961584, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027543600433961584, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027543600433961586, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027543600433961587, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1027543600433961589, guid: 11774b137a479294da0b764fb374fef9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1027543600433961589, guid: 11774b137a479294da0b764fb374fef9, type: 3}
       propertyPath: m_LocalPosition.x

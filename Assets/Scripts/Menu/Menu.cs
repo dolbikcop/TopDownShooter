@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public void Kek()
+    {
+        Debug.Log("KEK");
+    }
     public void Play() => SceneManager.LoadScene(1);
     public void Exit() => Application.Quit();
 }
