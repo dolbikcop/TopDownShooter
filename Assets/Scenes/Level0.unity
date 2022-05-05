@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &37358134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1027543600433961589, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+  m_PrefabInstance: {fileID: 1027543600573307457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &144665920
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,9 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c429694f0406e0479da0c364e6c58e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy:
-  - {fileID: 8245575119223517309, guid: 764b34623b3b03446826e4aaba095eca, type: 3}
+  enemies:
   - {fileID: 6082795217041230850, guid: b7773470584a596428ac029243330153, type: 3}
+  - {fileID: 8245575119223517309, guid: 764b34623b3b03446826e4aaba095eca, type: 3}
   spawnPoint:
   - {fileID: 553148753}
   - {fileID: 1731689616}
@@ -545,6 +550,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -631,6 +637,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1adb6210797b20a49a8d59287926351b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 37358134}
 --- !u!1 &552194460
 GameObject:
   m_ObjectHideFlags: 0
