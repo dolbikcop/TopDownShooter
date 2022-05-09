@@ -1047,7 +1047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553148753}
   - component: {fileID: 553148756}
-  - component: {fileID: 553148755}
+  - component: {fileID: 553148754}
   m_Layer: 0
   m_Name: point
   m_TagString: SP
@@ -1069,19 +1069,32 @@ Transform:
   m_Father: {fileID: 144665922}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &553148755
-BoxCollider:
+--- !u!61 &553148754
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553148752}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.88, y: 1.81}
+    newSize: {x: 1.88, y: 1.81}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.88, y: 1.5618737, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.88, y: 1.81}
+  m_EdgeRadius: 0
 --- !u!212 &553148756
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2520,6 +2533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 915312621, guid: 11774b137a479294da0b764fb374fef9, type: 3}
+      propertyPath: startScreen
+      value: 
+      objectReference: {fileID: 3977616894823555539, guid: 4dd1e1833ab32d24797ec8bfccefb081, type: 3}
     - target: {fileID: 1027543600433961578, guid: 11774b137a479294da0b764fb374fef9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2581,6 +2598,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 627191123, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010301, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 184.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010301, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4550605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010301, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4550605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010301, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4550605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010301, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 51.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010301, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 45.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067010302, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c8d3e3669878dcd488bbefce3f69d004, type: 3}
     - target: {fileID: 2067010304, guid: 23cd199e8342e7246ad78441a33aac87, type: 3}
       propertyPath: pl
       value: 

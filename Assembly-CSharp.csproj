@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\Enemy_Shooting.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <None Include="Assets\Fonts\OFL.txt" />
  <Reference Include="UnityEngine">
  <HintPath>E:/Program/Unity Hub/2020.3.31f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

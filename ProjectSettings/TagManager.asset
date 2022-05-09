@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Worm
-  - Bullet
   - SP
   - Score
+  - Trojan
   layers:
   - Default
   - TransparentFX
