@@ -21,6 +21,6 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Instantiate(deathScreen, transform.position, Quaternion.identity);
-        gameObject.GetComponent<PlayerMovement>().speed = 0;
+        gameObject.GetComponent<PlayerMovement>().speed = 0f;
     }
 }

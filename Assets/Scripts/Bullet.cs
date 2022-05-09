@@ -7,6 +7,12 @@ public class Bullet : MonoBehaviour
 {
     public GameObject hitEffect;
     public int damage;
+    private Score sc;
+
+    private void Start()
+    {
+        sc = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,5 +22,10 @@ public class Bullet : MonoBehaviour
         if (enemy)
             enemy.TakeDamage(damage);
         Destroy(gameObject);
+        if (collision.gameObject.CompareTag("SP"))
+        {
+            sc.score++;
+            Destroy(collision.gameObject);
+        }
     }
 }

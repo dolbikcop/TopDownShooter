@@ -13,7 +13,7 @@ public class EnemyInfo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.GetComponent<Enemy>())
-            Time.timeScale = 0f;
+        if (col.gameObject.GetComponent<Enemy>()){}
+            //Time.timeScale = 0f;
     }
 }
