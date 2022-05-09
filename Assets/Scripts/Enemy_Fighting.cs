@@ -20,6 +20,7 @@ public class Enemy_Fighting : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        RotateTowardsTarget();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -32,5 +33,13 @@ public class Enemy_Fighting : MonoBehaviour
         }
 
         speed = startSpeed;
+    }
+    private void RotateTowardsTarget()
+    {
+        var offset = 90f;
+        Vector2 direction = transform.position - player.position;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;       
+        transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
     }
 }

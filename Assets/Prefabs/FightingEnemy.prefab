@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.06568036, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Worm
+  m_Text: "\u0422\u0440\u043E\u044F\u043D"
 --- !u!1 &6082795217041230850
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: a50747b7090647445a1aa71f3aefd771, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74d037266cc06f344933b203e2e617b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,18 +179,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022876143, y: -0.10675502}
+  m_Offset: {x: 0.00985086, y: -0.7503853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6666666, y: 1.5666667}
+    oldSize: {x: 4.34, y: 4.78}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5337751, y: 1.21351}
+  m_Size: {x: 1.5992291, y: 2.5007706}
   m_EdgeRadius: 0
 --- !u!114 &2397990325527224637
 MonoBehaviour:
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 120
-  deathEffect: {fileID: 3762662524278067749, guid: 7ef71de21f2934c469ab8059441a03b3, type: 3}
+  deathEffect: {fileID: 5815705870535322021, guid: f3146c6bdb4185d40996a55de826a868, type: 3}
 --- !u!50 &6536979986043289625
 Rigidbody2D:
   serializedVersion: 4

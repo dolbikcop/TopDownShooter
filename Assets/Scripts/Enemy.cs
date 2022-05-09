@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        var effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+        var effect = Instantiate(deathEffect, transform.position, gameObject.transform.rotation);
         Destroy(effect, 1f);
         Destroy(gameObject);
     }
