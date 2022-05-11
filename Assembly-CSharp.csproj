@@ -65,15 +65,15 @@
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BossBullet.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy_Fighting.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyInfo.cs" />
     <Compile Include="Assets\Scripts\Player\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\Camera\SceneData.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boss.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy_Shooting.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boss.cs" />
-    <Compile Include="Assets\Scripts\Enemy\BossBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

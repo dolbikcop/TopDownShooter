@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement*speed*Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + speed * Time.fixedDeltaTime * movement);
 
         var lookDir = mousePos - rb.position;
         var rotate = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;

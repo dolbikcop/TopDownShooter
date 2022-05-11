@@ -15,6 +15,7 @@ public class Enemy_Shooting : MonoBehaviour
     public float startTimeBtwShots = 1f;
 
     private Transform player;
+    private Rigidbody2D rb;
     
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
@@ -22,16 +23,15 @@ public class Enemy_Shooting : MonoBehaviour
     void Start()
     {
         player = DataManager.player;
+        rb = GetComponent<Rigidbody2D>();
     }
-    void Update()
+    void FixedUpdate()
     {
         var dist = Vector2.Distance(transform.position, player.position);
+        var direction = player.GetComponent<Rigidbody2D>().position - rb.position;
         if (dist <= lookingDistance)
         {
-            if (dist > stoppingDistance)
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-            else if (dist < retreatDistance)
-                transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+            rb.MovePosition(rb.position + direction.normalized * speed * Time.deltaTime);
             RotateTowardsTarget();
             
             if (timeBtwShots <= 0)

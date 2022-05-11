@@ -10,17 +10,21 @@ public class Enemy_Fighting : MonoBehaviour
     private float startSpeed;
 
     private Transform player;
+    private Rigidbody2D rb;
     private bool isCollidesPlayer = false;
     void Start()
     {
         player = DataManager.player;
         startSpeed = speed;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        var direction = player.GetComponent<Rigidbody2D>().position - rb.position;
+        rb.MovePosition(rb.position + direction.normalized * Time.fixedDeltaTime * speed);
+        Debug.DrawRay(transform.position, new Vector3(direction.x, direction.y, 1));
     }
 
     void OnCollisionEnter2D(Collision2D collision)
