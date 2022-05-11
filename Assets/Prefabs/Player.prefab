@@ -60,6 +60,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8948e6cde81ded94caf9ab6e4c120f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startScreen: {fileID: 0}
+  wormScreen: {fileID: 0}
+  trojanScreen: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!1 &1027543599723647462
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f048734b623c25b45843a9400998019d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 500
   deathScreen: {fileID: 3977616894823555539, guid: 4dd1e1833ab32d24797ec8bfccefb081, type: 3}
   healthBar: {fileID: 0}
+  cam: {fileID: 0}

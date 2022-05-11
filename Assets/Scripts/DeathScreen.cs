@@ -9,5 +9,6 @@ public class DeathScreen : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
     public void Exit() => SceneManager.LoadScene(0);
 }

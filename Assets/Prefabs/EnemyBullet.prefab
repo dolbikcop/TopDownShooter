@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564546d7035dbef4a9f92c19e173ef37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEffect: {fileID: 879162725822577400, guid: 7ef71de21f2934c469ab8059441a03b3, type: 3}
+  hitEffect: {fileID: 2987581074526766243, guid: 52caf1fb0b0169d4fb33b251bb9bab4a, type: 3}
   damage: 10

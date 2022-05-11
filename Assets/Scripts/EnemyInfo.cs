@@ -9,12 +9,14 @@ public class EnemyInfo : MonoBehaviour
     public GameObject startScreen;
     public GameObject wormScreen;
     public GameObject trojanScreen;
+    
+    public Transform camera;
 
     private GameObject screen;
 
     private void Start()
     {
-        screen = Instantiate(startScreen, transform.position, Quaternion.identity);
+        screen = Instantiate(startScreen, new Vector3(camera.position.x, camera.position.y), Quaternion.identity);
         Time.timeScale = 0f;
     }
 
@@ -37,12 +39,12 @@ public class EnemyInfo : MonoBehaviour
             if (e.gameObject.tag == "Worm" && !isWorm)
             {
                 Time.timeScale = 0f;
-                screen = Instantiate(wormScreen, transform.position, Quaternion.identity);
+                screen = Instantiate(wormScreen, new Vector3(camera.position.x, camera.position.y), Quaternion.identity);
                 isWorm = true;
             } else if (e.gameObject.tag == "Trojan" && !isTrojan)
             {
                 Time.timeScale = 0f;
-                screen = Instantiate(trojanScreen, transform.position, Quaternion.identity);
+                screen = Instantiate(trojanScreen, new Vector3(camera.position.x, camera.position.y), Quaternion.identity);
                 isTrojan = true;
             }
             

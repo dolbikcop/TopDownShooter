@@ -6,10 +6,14 @@ ScriptsOnlyBuild:
     - DeathScreen
     - Enemy
     - EnemyBullet
+    - EnemyInfo
     - Enemy_Fighting
     - Enemy_Shooting
+    - HealthBar
+    - Menu
     - PlayerHealth
     - PlayerMovement
+    - Score
     - Shooting
     - Spawner
     Unity.2D.Animation.Editor.dll:
@@ -41,7 +45,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Level0.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -56,6 +60,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 70
@@ -65,41 +71,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 1714}
+      Script: {instanceID: 1462}
     - Class: 114
-      Script: {instanceID: 1962}
+      Script: {instanceID: 1716}
     - Class: 114
-      Script: {instanceID: 1980}
+      Script: {instanceID: 1720}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2266}
+      Script: {instanceID: 1968}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 1986}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 2236}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3356}
+      Script: {instanceID: 2984}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 3680}
+      Script: {instanceID: 3360}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 5574}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 5804}
+      Script: {instanceID: 3838}
     - Class: 114
-      Script: {instanceID: 23652}
+      Script: {instanceID: 4586}
+    - Class: 114
+      Script: {instanceID: 5114}
+    - Class: 114
+      Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 5814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -118,19 +130,72 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1462}
+    - Class: 114
+      Script: {instanceID: 2700}
+    - Class: 114
+      Script: {instanceID: 2872}
+    - Class: 114
+      Script: {instanceID: 3112}
+    - Class: 114
+      Script: {instanceID: 3360}
+    - Class: 114
+      Script: {instanceID: 3376}
+    - Class: 114
+      Script: {instanceID: 3482}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 5ab533713adae59372fb3e10a585c186
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: AnimationPlayableAsset
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -181,6 +246,12 @@ ScriptsOnlyBuild:
     className: Shooting
   - hash:
       serializedVersion: 2
+      Hash: 8f7d2195db7d7342342bb0e224561a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score
+  - hash:
+      serializedVersion: 2
       Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -191,6 +262,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthBar
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -233,12 +310,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 91d258529db2b5060a913f2afcea1a21
@@ -373,6 +444,12 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -431,6 +508,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: e622c77c1a4a7af7231d2ca6fa50c960
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyInfo
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -547,6 +630,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeathScreen
+  - hash:
+      serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -613,7 +702,7 @@ ScriptsOnlyBuild:
     className: SpriteLibraryAsset
   - hash:
       serializedVersion: 2
-      Hash: 90a2a45c16302fbc35ffb6967320de69
+      Hash: 4b7c0f561fcc46611eaca4b718407402
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy_Shooting
@@ -649,7 +738,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: f374e05a7ebd2abd6d1d07e3cf6b2480
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -685,17 +774,12 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: caf262184f1f5bc3389e201904acc95c
+      Hash: 58173d49d965dc98d3d4018618ebab20
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHealth
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DeathScreen
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Shooter Project.exe
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/Level0.unity
+  playerPath: E:/Downloads/000/Shooter Project.exe

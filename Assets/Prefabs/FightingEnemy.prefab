@@ -154,7 +154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 74d037266cc06f344933b203e2e617b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 1
+  damage: 200
 --- !u!114 &5072096160109025202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2257fa7c91e31f44f975491e4668837f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 100
   deathEffect: {fileID: 5815705870535322021, guid: f3146c6bdb4185d40996a55de826a868, type: 3}
 --- !u!50 &6536979986043289625
 Rigidbody2D:
@@ -299,7 +299,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 64
+  m_SortingOrder: -4
   m_TargetDisplay: 0
 --- !u!114 &6292926522878307504
 MonoBehaviour:

@@ -167,7 +167,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 64
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &6414956546702137294
 MonoBehaviour:
@@ -336,13 +336,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  stoppingDistance: 5
-  retreatDistance: 3
-  lookingDistance: 20
+  stoppingDistance: 7
+  retreatDistance: 4
+  lookingDistance: 10
   firePoint: {fileID: 5839944393680300486}
   startTimeBtwShots: 2
   bulletPrefab: {fileID: 8873047607171639434, guid: dcf469fe0f8aeb546956dab3345c7bdf, type: 3}
-  bulletForce: 20
+  bulletForce: 100
 --- !u!114 &4848421399132863226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2257fa7c91e31f44f975491e4668837f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 150
   deathEffect: {fileID: 8718040252849429756, guid: ef9953ae1b274a24ca2af3c7f00def5b, type: 3}
 --- !u!50 &-2868373340550547349
 Rigidbody2D:

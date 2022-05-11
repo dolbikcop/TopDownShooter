@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameObject cam;
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -20,7 +22,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Instantiate(deathScreen, transform.position, Quaternion.identity);
+        Instantiate(deathScreen, new Vector3(cam.transform.position.x, cam.transform.position.y), Quaternion.identity);
         gameObject.GetComponent<PlayerMovement>().speed = 0f;
+        Destroy(cam.GetComponent<CameraMovement>());
     }
 }
